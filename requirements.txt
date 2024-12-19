@@ -1,0 +1,7 @@
+cerebras_cloud_sdk==1.14.0
+chromadb==0.5.23
+openai
+python-dotenv
+langchain_community
+langchain_text_splitters
+pypdf
