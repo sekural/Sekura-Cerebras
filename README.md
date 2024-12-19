@@ -38,3 +38,28 @@ Ensure that you have Python 3.x installed and the following tools are set up:
     ```bash
     python main_infer.py
     ```
+
+## Generating Vector_DB
+
+To leverage the vector similarity search capabilities of Sekura-Cerebras, you need to generate a database of document vectors. This is done by processing PDF files relevant to security vulnerabilities.
+
+### Steps to Generate the Vector Database
+
+1. **Create a folder named "data"** in the project directory:
+
+    ```bash
+    mkdir data
+    ```
+
+2. **Add PDF files** that contain relevant information (e.g., documentation, security guides, vulnerability databases) into the `data` folder.
+
+3. **Run the vector database generation script** by executing the following command:
+
+    ```bash
+    python data_to_vecdb.py
+    ```
+
+    This will process the PDFs in the `data` folder, generate vectors for the contents, and store them in a vector database.
+
+Once the vector database is generated, it can be used for similarity search, allowing the tool to offer targeted insights into security vulnerabilities based on the PDF content. We have currently created a vector DB with the necessary data required, so a developer can directly run main_infer.py to identify the vulnerabilities in their code.
+
