@@ -16,7 +16,7 @@ Ensure that you have Python 3.x installed and the following tools are set up:
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/yourusername/sekura-cerebras.git
+    git clone https://github.com/sekural/Sekura-Cerebras.git
     ```
 
 2. Navigate into the project directory:
